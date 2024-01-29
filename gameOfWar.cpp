@@ -114,11 +114,18 @@ int main() {
     srand(time(0));
     while(condition == 0){
         std::cout<<"Next Turn"<<std::endl;
-        std::cin >> balling;
+        // std::cin >> balling;
         condition = mainGame(mainDeck, player1, player2);
     }
     std::cout << condition << std::endl;
-    
+    switch(condition){
+        case(1):
+        std::cout << "Player 1 one" << std::endl;
+        break;
+        case(2):
+        std::cout << "Player 2 one" << std::endl;
+        break;
+    } 
 
 
 
